@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize None-ls sources
 
@@ -7,7 +7,7 @@ return {
   "nvimtools/none-ls.nvim",
   opts = function(_, opts)
     -- opts variable is the default configuration table for the setup function call
-    -- local null_ls = require "null-ls"
+    local null_ls = require "null-ls"
 
     -- Check supported formatters and linters
     -- https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/formatting
@@ -19,6 +19,12 @@ return {
       -- Set a formatter
       -- null_ls.builtins.formatting.stylua,
       -- null_ls.builtins.formatting.prettier,
+      null_ls.builtins.formatting.isort.with {
+        extra_args = { "--profile", "black", "-l", "120" },
+      },
+      null_ls.builtins.formatting.black.with {
+        extra_args = { "-S", "-l", "120" },
+      },
     })
   end,
 }
