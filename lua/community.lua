@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.syntax.vim-easy-align" },
   -- import/override with your plugins folder
 }

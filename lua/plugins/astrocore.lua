@@ -74,6 +74,13 @@ return {
           desc = "Open Copilot Panel in split right",
         },
         ["<leader>Gr"] = { "<cmd>lua require('copilot.panel').refresh()<CR>", desc = "Refresh suggestions" },
+
+        -- vim-easy-align mappings
+        ["ga"] = { ":EasyAlign ", desc = "EasyAlign" },
+      },
+      v = {
+        -- vim-easy-align mappings
+        ["ga"] = { ":EasyAlign ", desc = "EasyAlign" },
       },
     },
   },
