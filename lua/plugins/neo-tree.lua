@@ -24,6 +24,7 @@ return {
           ".secrets.toml",
           "pyrightconfig.json",
           ".pylintrc",
+          "pyproject.toml",
         },
         never_show_by_pattern = {
           "**/*.py[a-zA-Z]",
