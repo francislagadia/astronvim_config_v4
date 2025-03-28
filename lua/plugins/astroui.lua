@@ -19,6 +19,12 @@ return {
       },
       astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },
+        -- Comment = { italic = true, fg = "#696C76" },
+        -- ["@string.documentation"] = { italic = true, bold = true }, -- python docstrings
+        -- -- DiagnosticInfo = { bold = true },
+        -- -- DiagnosticWarn = { bold = true },
+        -- DiagnosticHint = { fg = "#4AC2B8", bold = true }, -- virtual text
+        -- DiagnosticError = { fg = "#FF838B", bold = true }, -- virtual text
       },
     },
     -- Icons can be configured throughout the interface
